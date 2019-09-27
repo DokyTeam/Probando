@@ -17,7 +17,7 @@ class App extends Component{
       
         <div >
           <Carrusel></Carrusel>
-          <h1 className = "text-align padding-section">Nuestros servicios</h1>
+          <h1 className = "text-section padding-section">Nuestros servicios</h1>
           <Service></Service>
 
                    

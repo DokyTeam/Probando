@@ -1,5 +1,130 @@
 
-/*colores*/
+/* card-sombra*/
+#carta{
+    padding: 2%;
+}
+
+#carta:hover{
+   
+    filter: grayscale(100%) blur(5px);
+}
+
+/**************************************/
+/***** imagen se amplia  *******/
+#container {
+width: 300px;
+margin: 0 auto;
+}
+.ex2 img{
+height: 100px;
+width: 300px;
+margin: 15px 0;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+}
+.ex2 img:hover {
+height: 133px;
+width: 400px;
+margin-left: -50px;
+}
+
+/**************************************/
+
+/**** efecto 1 = zoom con subir y texto***/
+
+.transition {
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+  }
+
+.div-img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.div-img .img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+-webkit-transform: 0px 0px 1;
+-moz-transform: 0px 0px 1;
+-ms-transform: 0px 0px 1;
+-o-transform: 0px 0px 1;
+transform: 0px 0px 1;
+transform: translate(0px, 0px) scale(1);
+-webkit-transform: translate(0px, 0px) scale(1);
+-moz-transform: translate(0px, 0px) scale(1);
+-o-transform: translate(0px, 0px) scale(1);
+-ms-transform: translate(0px, 0px) scale(1);
+-webkit-transition: all 0s ease 0s;
+-moz-transition: all 0s ease 0s;
+-o-transition: all 0s ease 0s;
+transition: all 0s ease 0s;
+-webkit-transition: all 500ms ease-in-out;
+-moz-transition: all 500ms ease-in-out;
+-ms-transition: all 500ms ease-in-out;
+-o-transition: all 500ms ease-in-out;
+}
+.div-img .text {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+position: relative;
+z-index: -1;
+display: block;
+bottom: 5%;
+width: 100%;
+text-align: center;
+-webkit-transform: 0px 0px 1;
+-moz-transform: 0px 0px 1;
+-ms-transform: 0px 0px 1;
+-o-transform: 0px 0px 1;
+transform: 0px 0px 1;
+transform: translate(0px, 0px) scale(1);
+-webkit-transform: translate(0px, 0px) scale(1);
+-moz-transform: translate(0px, 0px) scale(1);
+-o-transform: translate(0px, 0px) scale(1);
+-ms-transform: translate(0px, 0px) scale(1);
+-webkit-transition: all 0s ease 0s;
+-moz-transition: all 0s ease 0s;
+-o-transition: all 0s ease 0s;
+transition: all 0s ease 0s;
+-webkit-transition: all 500ms ease-in-out;
+-moz-transition: all 500ms ease-in-out;
+-ms-transition: all 500ms ease-in-out;
+-o-transition: all 500ms ease-in-out;
+}
+.div-img:hover .img {
+-webkit-transform: 0px -30px 0.5;
+-moz-transform: 0px -30px 0.5;
+-ms-transform: 0px -30px 0.5;
+-o-transform: 0px -30px 0.5;
+transform: 0px -30px 0.5;
+transform: translate(0px, -30px) scale(0.5);
+-webkit-transform: translate(0px, -30px) scale(0.5);
+-moz-transform: translate(0px, -30px) scale(0.5);
+-o-transform: translate(0px, -30px) scale(0.5);
+-ms-transform: translate(0px, -30px) scale(0.5);
+border-radius: 50%;
+}
+.div-img:hover .text {
+    position: static;
+-webkit-transform: 0px -70px 1;
+-moz-transform: 0px -70px 1;
+-ms-transform: 0px -70px 1;
+-o-transform: 0px -70px 1;
+transform: 0px -70px 1;
+transform: translate(0px, -70px) scale(1);
+-webkit-transform: translate(0px, -70px) scale(1);
+-moz-transform: translate(0px, -70px) scale(1);
+-o-transform: translate(0px, -70px) scale(1);
+-ms-transform: translate(0px, -70px) scale(1);
+}
+/****************************************/
+/********colores*******/
 .color-ligth{
     background-color: #beffba;
   }
@@ -14,10 +139,10 @@
 .color-backgroud{
     background: #ffffff;
 }
-
+/**************************************/
 
   
-  /*imagenes */
+  /**********imagenes **********/
 .imagetamano{
     height: 16rem;
     width: 16rem;
@@ -31,7 +156,7 @@
   padding: 1em;
 }
 
-/*pading */
+/******pading *************/
 .padding-section{
     padding-top: 3%;
     padding-bottom: 1%;
@@ -39,14 +164,34 @@
 .padding-card{
     padding: 1%;
   }
+/**************************************/
 
-  /*text*/
+
+  /*************text********/
 .text-align{
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
   }
+
+.text-container{
+    width: 200px;
+    height: 100px;
+    background: rgba (255,255,255, 0.7);
+    padding: 10px;
+    color: black;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+.text-section{
+    text-align: left;
+    padding-left: 5%;
+}
  
 .text-font {
     
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+/**************************************/
