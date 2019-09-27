@@ -1,6 +1,23 @@
+
+
 .App {
   text-align: center;
   
+  
+  
+}
+
+.color-ligth{
+  background-color: #ebffa9;
+}
+.text-align{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+
+}
+.padding-card{
+  padding: 1%;
 }
 
 .imagetamano{
@@ -15,7 +32,10 @@
   height: 40vmin;
   
 }
-
+.padding-section{
+  padding-top: 3%;
+  padding-bottom: 1%;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
