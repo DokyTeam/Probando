@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Navegation.css';
+import './Components.css';
 import logo from'./pet-shop.svg'
 
 class Navegation extends Component{
@@ -8,7 +8,7 @@ class Navegation extends Component{
         return (
         <div className="Navegation">
             
-            <nav className="navbar  color-nav  ">
+            <nav className="navbar  color-dark">
                 <h1 className= "text-light  text-font font-italic text-uppercase ">
                     doky
                 </h1>
