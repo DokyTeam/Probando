@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 
+import Upperbar from './upperbar/Upperbar.js';
+import Carrusel from './carrusel-home/Carrusel.js';
+import Service from './Service/Service.js';
+
 class Homepage extends Component {
     render() {
         return (
             <div className="color-backgroud">
       <header>
-      <Navegation ></Navegation>
+      <Upperbar ></Upperbar>
       </header>
      
       
@@ -22,9 +26,9 @@ class Homepage extends Component {
          
       <footer>
         
-        <Navegation>
+        <Upperbar>
 
-        </Navegation>
+        </Upperbar>
       </footer>
 
     </div>
