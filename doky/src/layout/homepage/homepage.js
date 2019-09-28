@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 
-import Upperbar from './upperbar/Upperbar.js';
-import Carrusel from './carrusel-home/Carrusel.js';
-import Service from './Service/Service.js';
+import upperbar from '../upperbar/upperbar';
+import Carrusel from '../carrusel-home/Carrusel.js';
+import Service from '../service/Service.js';
 
 class Homepage extends Component {
     render() {
         return (
             <div className="color-backgroud">
       <header>
-      <Upperbar ></Upperbar>
+      <upperbar ></upperbar>
       </header>
      
       
@@ -26,9 +26,9 @@ class Homepage extends Component {
          
       <footer>
         
-        <Upperbar>
+        <upperbar>
 
-        </Upperbar>
+        </upperbar>
       </footer>
 
     </div>

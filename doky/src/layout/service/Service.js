@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
-import pasear from './Images/pasear.jpg';
-import salto from './Images/salto.jpg';
-import veterinaria from './Images/veterinaria.jpg';
-import guarderia from './Images/guarderia.jpg';
-import Card_sombra from "./Card_sombra.js";
+import pasear from './images/pasear.jpg';
+import salto from './images/salto.jpg';
+import veterinaria from './images/veterinaria.jpg';
+import guarderia from './images/guarderia.jpg';
+import Card_sombra from "../cards/Card_sombra.js";
 
 class Service extends Component{
 
