@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import './Components.css';
+import './Card.css';
 
 class Card_sombra extends Component{
 

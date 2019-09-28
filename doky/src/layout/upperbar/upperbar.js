@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './upperbar.css';
 import shop from "./images/shop.jpeg"
 
-class Upperbar extends Component {
+class upperbar extends Component {
     render() {
         return (
             <div className="Navegation">
@@ -29,4 +29,4 @@ class Upperbar extends Component {
     }
 }
 
-export { Upperbar }; 
+export default upperbar; 
