@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import  Upperbar  from './upperbar/upperbar';
-import { Landingpage } from './landingpage/landingpage';
-import { Homepage } from './homepage/homepage';
+import  Upperbar  from '../upperbar/upperbar';
+import { Landingpage } from '../landingpage/landingpage';
+import { Homepage } from '../homepage/homepage';
 
 class MainContainer extends Component {
     constructor(props) {
