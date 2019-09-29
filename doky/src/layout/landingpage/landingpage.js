@@ -13,12 +13,12 @@ class Landingpage extends Component {
             <div>
                 <div className="landingpage">
                     <LeftContent />
-                    <RightContent MainContainerhandler={this.props.MainContainerhandler}/>
+                    <RightContent MainContainerhandler={this.props.MainContainerhandler} />
                 </div>
                 <div className="lowerbar">
-                    <h1> About Us </h1>
-                    <h1> Contact US </h1>
-                    <h1> Authorized Dealers </h1>
+                    <h1> NOSOTROS </h1>
+                    <h1> CONTACTO </h1>
+                    <h1> AUXILIAR </h1>
                 </div>
             </div>
         );
@@ -31,48 +31,45 @@ class LeftContent extends Component {
             <div className="leftcontainer">
                 <p style={{ fontSize: 22 }}>Conoce a Doky</p>
                 <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-            <ol className="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div className="carousel-inner">
-              <div className="carousel-item active"  data-interval="1000">
-                 <img src={foto1} className="d-block w-100" alt="logo"></img>
-                   <div className="carousel-caption d-none d-md-block">
-                     <h5  >First slide label</h5>
-                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                   </div>
-               </div>
-              <div className="carousel-item" data-interval="1000">
-                <img src={foto2} className="d-block w-100" alt="logo"></img>
-                <div className="carousel-caption d-none d-md-block">
-                  <h5 className = "test-format">Second slide label</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <ol className="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div className="carousel-inner">
+                        <div className="carousel-item active" data-interval="1000">
+                            <img src={foto1} className="d-block w-100" alt="logo"></img>
+                            <div className="carousel-caption d-none d-md-block">
+                                <p>Los perros son los amigos mas fieles.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item" data-interval="1000">
+                            <img src={foto2} className="d-block w-100" alt="logo"></img>
+                            <div className="carousel-caption d-none d-md-block">
+                                <p>La naturaleza es nuestro unico recurso.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item" data-interval="1000">
+                            <img src={foto3} className="d-block w-100" alt="logo"></img>
+                            <div className="carousel-caption d-none d-md-block">
+                                <p>Los gatos siempre lo estan viendo todo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Previous</span>
+                    </a>
+                    <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Next</span>
+                    </a>
                 </div>
-              </div>
-              <div className="carousel-item" data-interval="1000">
-                <img src={foto3} className="d-block w-100" alt="logo"></img>
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-              </div>
-            </div>
-            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-             <span className="sr-only">Previous</span>
-             </a>
-            <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              <span className="sr-only">Next</span>
-              </a>
-          </div>
                 <div className="pugcontainer">
                     <img align="middle" alt="imagen de un gato" title="El PUG" src={pug} width="80px"></img>
                     <div>
-                        <p style={{ textAlign: "center", fontSize: 20 }}>¿Que es Doky?</p>
-                        <p style={{ textAlign: "center", fontSize: 11 }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <h3 style={{fontSize: 25 , textAlign: "center"}}>¿Que es Doky?</h3>
+                        <h4 style={{fontSize: 20 , textAlign: "center"}}>Doky es la nueva plataforma que te permitira poder tener a la mano todo lo que tu mascota necesita</h4> 
                     </div>
                 </div>
             </div>
@@ -94,7 +91,7 @@ class RightContent extends Component {
     render() {
         return (
             <div className="rightcontainer">
-                {(this.state.isEdit) ? <Login rightcontenthandler={this.handler} MainContainerhandler={this.props.MainContainerhandler}/> : <Register rightcontenthandler={this.handler} />}
+                {(this.state.isEdit) ? <Login rightcontenthandler={this.handler} MainContainerhandler={this.props.MainContainerhandler} /> : <Register rightcontenthandler={this.handler} />}
             </div>
         );
     }
@@ -104,27 +101,27 @@ class Login extends Component {
     render() {
         return (
             <div>
-                <p style={{ marginTop: 70}}>WELCOME BACK!!!</p>
+                <p style={{ marginTop: 60 }}>BIENVENIDO</p>
                 <img align="middle" alt="imagen de un gato" title="El GATO" src={cat} width="80px"></img>
-                <br/>
-                <br/>
+                <br />
+                <br />
                 <form onSubmit={this.handleSubmit}>
-                    <h6>USUARIO</h6>
+                    <h6>USUARIO:</h6>
                     <label>
-                        <input type="text" className="input"/>
+                        <input type="text" className="input" />
                     </label>
-                    <br/>
-                    <br/>
-                    <h6>CONTRASEÑA</h6>
+                    <br />
+                    <br />
+                    <h6>CONTRASEÑA:</h6>
                     <label>
-                        <input type="text" className="input"/>
+                        <input type="text" className="input" />
                     </label>
-                    <br/>
-                    <br/>
-                    <input type="submit" value="Sign In" className = "button" onClick={this.props.MainContainerhandler.bind(this,false)}/>
-                    
+                    <br />
+                    <br />
+                    <input type="submit" value="INGRESAR" className="button" onClick={this.props.MainContainerhandler.bind(this, false)} />
+
                 </form>
-                <button className = "button2" onClick={this.props.rightcontenthandler.bind(this,false)}>Sign Up</button>
+                <button className="button2" onClick={this.props.rightcontenthandler.bind(this, false)}>REGISTRARSE</button>
             </div>
         );
     }
@@ -134,39 +131,32 @@ class Register extends Component {
     render() {
         return (
             <div>
-                <p style={{ marginTop: 40}}>Create a new account</p>
+                <p style={{ marginTop: 40 }}>CREA TU NUEVA CUENTA</p>
                 <img align="middle" alt="imagen de un gato" title="El CUY" src={cuy} width="80px"></img>
-                <br/>
-                <br/>
+                <br />
+                <br />
                 <form onSubmit={this.handleSubmit}>
-                     <label>
-                        USERNAME:
-                        <input type="text" className="input"/>
-                    </label>
-                    <br/>
-                    <br/>
+                    <h6>USUARIO:</h6>
                     <label>
-                        YOUR EMAIL:
-                        <input type="text" className="input"/>
+                        <input type="text" className="input" />
                     </label>
-                    <br/>
-                    <br/>
+                    <h6>NOMBRE:</h6>
                     <label>
-                        PASSWORD:
-                        <input type="text" className="input"/>
+                        <input type="text" className="input" />
                     </label>
-                    <br/>
-                    <br/>
+                    <h6>CORREO:</h6>
                     <label>
-                        YOUR NAME:
-                        <input type="text" className="input"/>
+                        <input type="text" className="input" />
                     </label>
-                    <br/>
-                    <br/>
-                    <input type="submit" value="Create" className = "button"/>
-                    
+                    <h6>CONTRASEÑA:</h6>
+                    <label >
+                        <input type="text" className="input" />
+                    </label>
+                    <br />
+                    <input type="submit" value="CREAR" className="button" />
+
                 </form>
-                <button onClick={this.props.rightcontenthandler.bind(this,true)} className = "button2">Go back</button>
+                <button onClick={this.props.rightcontenthandler.bind(this, true)} className="button2">VOLVER</button>
             </div>
         );
     }
